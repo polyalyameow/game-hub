@@ -14,9 +14,9 @@ function App() {
       </GridItem>
       {/* Show to make sure that aside will be shown only on large screens */}
       <Show above="lg">
-      <GridItem area="aside" bg="gold">Aside</GridItem>
+      <GridItem area="aside">Aside</GridItem>
       </Show>
-      <GridItem area="main" bg="dodgerblue">Main</GridItem>
+      <GridItem area="main">Main</GridItem>
     </Grid>
   )
 }
