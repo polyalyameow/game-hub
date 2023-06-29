@@ -5,9 +5,10 @@ import {CanceledError} from 'axios';
 // interface that represents games
 // info is checked in the rawg documentation
 
-interface Game {
+export interface Game {
     id: number;
     name: string;
+    background_image: string;
 }
 
 interface FetchGamesResponse {
