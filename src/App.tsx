@@ -24,7 +24,7 @@ function App() {
       {/* Show to make sure that aside will be shown only on large screens */}
       <Show above="lg">
       <GridItem area="aside" paddingX={5}>
-        <GenreList onSelectGenre={(genre) => setSelectedGenre(genre)}/>
+        <GenreList selectedGenre={selectedGenre} onSelectGenre={(genre) => setSelectedGenre(genre)}/>
       </GridItem>
       </Show>
       <GridItem area="main">
