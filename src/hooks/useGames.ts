@@ -1,5 +1,6 @@
 
 import useData from "./useData"; 
+import { Genre } from "./useGenres";
 
 // interface that represents games
 // info is checked in the rawg documentation
@@ -21,6 +22,6 @@ export interface Game {
 
 
 
-const useGames = () => useData<Game>('/games');
+const useGames = (selectedGenre: Genre | null) => useData<Game>('/games', {params: {genres: selectedGenre?.id}}, [selectedGenre?.id]);
 
 export default useGames
